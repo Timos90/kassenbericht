@@ -78,5 +78,13 @@ def main(page: ft.Page):
     # Now it's safe to load data (controls are attached)
     load_data(datetime.now())
 
+""" if __name__ == "__main__":
+    ft.app(target=main) """
 if __name__ == "__main__":
-    ft.app(target=main)
+    port = int(os.environ.get("PORT", "8080"))
+    ft.app(
+        target=main,
+        view=ft.AppView.WEB_BROWSER,  # force web mode
+        host="0.0.0.0",               # bind publicly
+        port=port                     # use Render's port
+    )
