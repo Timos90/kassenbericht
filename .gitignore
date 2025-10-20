@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+venv/
+.venv/
+
+# Data files
+data/
+
+# Flet build artifacts
+/assets/
+/dist/
+/build/
+
+# IDE specific
+.idea/
+.vscode/
+
+# OS specific
+.DS_Store
